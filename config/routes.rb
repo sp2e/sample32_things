@@ -2,8 +2,11 @@ Sample32Things::Application.routes.draw do
   root to: 'static_pages#home'
 
   match '/help', to: 'static_pages#help'
-  # get "static_pages/home"
+  match '/text_file_load', to: 'static_pages#load_text_file'
+  match '/read_file', to: 'static_pages#read_file'
 
+
+  # get "static_pages/home"
   #get "static_pages/help"
 
   # The priority is based upon order of creation:
