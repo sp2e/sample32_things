@@ -1,8 +1,9 @@
 <h1>StaticPages#Load_text_file</h1>
 <p>Find me in app/views/static_pages/load_text_file.html.erb</p>
 
-<%= form_tag("/read_file", :method => "get") do %>
-      <%= label_tag(:file_name, "Read File for:") %>
+<%#= form_tag("/read_file", method: "get") do %>
+<%= form_tag(read_file_path, method: "get") do %>
+      <%= label_tag(:file_name, "Read File :") %>
       <%= text_field_tag(:file_name) %>
       <%= submit_tag("Read File") %>
 <% end %>

@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//
+// I added the following on 4-30-2012
+// Loads all Bootstrap javascripts
+//= require bootstrap

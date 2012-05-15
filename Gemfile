@@ -1,17 +1,21 @@
 source 'https://rubygems.org'
 #App:   sample32_things
 
-gem 'rails', '3.2.2'
+gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+#add twitter-bootstrap-rails
+
 
 group :development do
         gem 'sqlite3', '1.3.5'
         gem 'rspec-rails', '2.8.1'
 end
 
-
+#is execjs needed for production?
+gem "execjs"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,9 +24,14 @@ group :assets do
   gem 'coffee-rails', '3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  #gem 'therubyracer'
 
   gem 'uglifier', '1.2.3'
+
+  #twitter-bootstrap not needed for production
+    #shouldnt need followin line for libv8.....
+  #gem 'libv8', '3.3.10.4'  
+  gem 'bootstrap-sass'
 end
 
 gem 'jquery-rails', '2.0.0'

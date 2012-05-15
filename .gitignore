@@ -13,3 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+
+# following only needed for OS X users
+#.DS_Store
