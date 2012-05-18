@@ -3,6 +3,7 @@ Sample32Things::Application.routes.draw do
 
   match '/help', to: 'static_pages#help'
   match '/text_file_load', to: 'static_pages#load_text_file'
+
   match '/read_file', to: 'static_pages#read_file'
 
 

@@ -14,33 +14,42 @@
 <body>
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <div class="container">
+      <div class="container-fluid">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
         <a class="brand" href="#">Demo Site for ND</a>
+        <ul class="nav">
+          <li><%= link_to "Demo Home"%></li>
+          <li><%= link_to "Test-Load Files", text_file_load_path %></li>
+          
+        </ul>
+
+
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Demo Home"%></li>
+            
             <li><%= link_to "Test Pg1" %></li>
             <li><%= link_to "Test Pg2" %></li>
-            <li><%= link_to "Test-Load Files" %></li>
+            
           </ul>
         </div>
+        
       </div>
     </div>
   </div>
 
 
-	<div class="container">
-		<div class="row">
-		    <div class="span9"><%= yield %></div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+		    
 			<div class="span3">
 			      <h2>About Us english</h2>
 			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
 			</div>
+      <div class="span9"><%= yield %></div>
 		    
 		</div> 	
 	</div>
