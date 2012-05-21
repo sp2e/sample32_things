@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_self
 //= require_tree .
 //
 // I added the following on 4-30-2012

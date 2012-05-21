@@ -29,4 +29,8 @@ class StaticPagesController < ApplicationController
     @emsg = ex.message
   end
 
+  def special_links
+  end
+
+  
 end

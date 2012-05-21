@@ -1,8 +1,9 @@
 Sample32Things::Application.routes.draw do
   root to: 'static_pages#home'
-
+  match '/site_home', to: 'static_pages#home'
   match '/help', to: 'static_pages#help'
   match '/text_file_load', to: 'static_pages#load_text_file'
+  match '/special_links', to: 'static_pages#special_links'
 
   match '/read_file', to: 'static_pages#read_file'
 
