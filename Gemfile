@@ -3,11 +3,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 
+#gem for active_mailer
+gem 'mail'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #add twitter-bootstrap-rails
-
 
 group :development do
         gem 'sqlite3', '1.3.5'
