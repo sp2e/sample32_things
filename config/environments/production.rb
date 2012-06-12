@@ -65,5 +65,7 @@ Sample32Things::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  GMail_Password = ENV['GMailPW']
+  GMail_password = ENV['GMailPW']
+end
+
 
