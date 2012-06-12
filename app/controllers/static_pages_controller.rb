@@ -16,6 +16,7 @@ class StaticPagesController < ApplicationController
        while (@getline = f.gets)
           @counter =@counter + 1
           @line = @getline
+          @canonical = Rails.root + @name_result
        end
     end
 

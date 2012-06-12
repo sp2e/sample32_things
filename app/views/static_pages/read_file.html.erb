@@ -1,8 +1,11 @@
 <% provide(:title, 'Read_file') %>
-this is read_file
+jason: this is read_file
 <br/>
 counter: <%= @counter %>
 <br/>
+canonical: <%= @canonical %>
+<br/>
+
 file name: <%=@name_result %>
 <br/>
 line: <%=@line %>
@@ -10,7 +13,6 @@ line: <%=@line %>
 readerr: <%=@readerr %>
 <br/>
 <% if @readerr == 1 %>
- 
 <%= "ERROR:"%> <br/>
 <%= "class:  #{@eclass}" %> <br/>
 <%= "message: #{@emsg}" %>

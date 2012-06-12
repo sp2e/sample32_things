@@ -34,4 +34,6 @@ Sample32Things::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  GMail_password = "GM"
 end
