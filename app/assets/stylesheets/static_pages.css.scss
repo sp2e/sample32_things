@@ -2,7 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 80px; }
 @import "bootstrap-responsive";
 
 
+
+dl.captioned-image         { position: relative; margin: 1em 0; }
+dl.captioned-image dt img  { display: block; }
+dl.captioned-image dd      { position: absolute; left: 30%; top: 0.2em;
+                             font: bold 1.1em/1.25em Helvetica, sans-serif; }
+
+dl.captioned-image dd span { display: block; float: left; clear: both;
+                             
+                             padding: 0.25em 0.5em; color: red; }
