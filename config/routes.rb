@@ -1,4 +1,5 @@
 Sample32Things::Application.routes.draw do
+  
   resources :users
 
   root to: 'static_pages#home'
@@ -8,10 +9,30 @@ Sample32Things::Application.routes.draw do
   match '/special_links', to: 'static_pages#special_links'
 
   match '/read_file', to: 'static_pages#read_file'
-
-
+  match '/murphy_video', to: 'static_pages#murphy_video'
+  match '/minot', to: 'static_pages#minot'
+  match '/unc_sub_home', to: 'unc_sub#unc_sub_home'
+  match '/sublime_landau', to: 'static_pages#sublime_landau'
+  match '/grandfather_of_rap', to: 'static_pages#grandfather_of_rap'
+  match '/dad_daughter_sing', to: 'static_pages#dad_daughter_sing'
+  match '/nurse_opera_sing', to: 'static_pages#nurse_opera_sing'
+  match '/landau', to: 'unc_sub#landau'
+  match '/gofrap', to: 'unc_sub#gofrap'
+  match '/popdau', to: 'unc_sub#popdau'
+  match '/turf', to: 'unc_sub#turf'
+  match '/operanurse', to: 'unc_sub#operanurse'
+  match '/boyle', to:'unc_sub#boyle'
+  
   # get "static_pages/home"
   #get "static_pages/help"
+  
+  #get "unc_sub/home"
+  #get "unc_sub/landau"
+  #get "unc_sub/gofrap"
+  #get "unc_sub/popdau"
+  #get "unc_sub/turf"
+  #get "unc_sub/operanurse"
+  #get "unc_sub/boyle"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

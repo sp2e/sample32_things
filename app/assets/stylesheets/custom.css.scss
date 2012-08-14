@@ -1,0 +1,104 @@
+
+//$heroUnitLeadColor:purple;	
+//$heroUnitBackground:powderBlue;
+//$heroUnitHeadingColor:#000044;
+//  defining variables here and then using those variable(s) here wont work !
+$heroUnitLeadColor:yellow;	
+$heroUnitBackground:#000044;
+$heroUnitHeadingColor:aqua;
+
+
+@import "bootstrap";
+body { padding-top: 80px; }
+@import "bootstrap-responsive";
+
+// Place all the styles related to the whole application here.
+// They will automatically be included in application.css.
+$verydarkblue:#000044;
+
+// # is used for "id = "" , which is one usage only
+#gc_slice {
+	float: left;
+	margin:0px 5px 5px 0px;
+	}
+//margin order above: top right bottom left
+
+// the initial . below means this applies to 'classes', 
+//which have more than one case used in the app
+
+//  "clear", below,  means nothing can appear to specified side of element.
+//in the case below, 
+//"both" means that nothing can appear either ont the right or left of the specified text.
+.clear_text {clear:both;}
+
+// # is used for "id = "" , which is one usage only
+#demo_intro {
+background-color:aqua;
+}
+
+
+.blueback_text {
+	color:aqua; 
+	background-color:$verydarkblue; 
+	font-size:20px; 
+	line-height:140%; 
+	padding-left:5px; 
+	margin-top:5px;
+}
+
+.reg_text {font-size: 20px;line-height:140%;}
+
+
+.sublime_link {
+display:block;
+font-size:20px;
+font-weight:bold;
+color:yellow;
+background-color:darkgreen;
+width:300px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+border:5px solid #000000;	
+}
+
+.sublime_link_clear {
+display:block;
+font-size:20px;
+font-weight:bold;
+color:yellow;
+background-color:darkgreen;
+width:300px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+border:5px solid #000000;
+clear:both;	
+}
+
+.font_15_bold {
+font-size:15px;
+font-weight:bold;
+}
+
+.testhero {
+clear:both;
+}
+
+//the next 3 lines dont work for the above hero-unit styling
+.hero-unit {
+$heroUnitLeadColor:yellow;	
+$heroUnitBackground:black;
+$heroUnitHeadingColor:red;
+}
+
+
+//clear:both;
+
+.hero_sublimeOLD {
+color:white; 
+font-size:25px;
+background-color:#98bf21;
+}
+
+

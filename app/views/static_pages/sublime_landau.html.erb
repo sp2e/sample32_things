@@ -1,0 +1,47 @@
+
+
+<span style='color:red; background-color:#98bf21; font-size:20px'}, class="label label-info btn-large">Uncle Sublime, click on the picture to play this video.</span>
+<br/>
+
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/v6LOSEzo1QA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<div class="hero-unit">
+	<h1>Uncle Sublime !</h1>
+    <p>To Learn what has become of Landau, ,<br/>
+    and to <br/>
+    Meet the GRANDFATHER OF RAP !!! </p>
+              <p>
+              <a href= <%= minot_path%> class="btn btn-primary btn-large" >
+                CLICK HERE 
+              </a>
+              </p>
+            </div>
+
+<li><%= link_to "Uncle Sublime, click here to meet the Grandfather of Rap", grandfather_of_rap_path %></li>
+
+<li><%= link_to "Uncle Sublime, click here to meet the Grandfather of Rap", grandfather_of_rap_path, {:style => "color:red", :class => "sublime_link"} %></li>
+
+<li><a class = "sublime_link" href= <%grandfather_of_rap_path %> >Uncle Sublime, click here to meet the Grandfather of Rap</a></li>
+
+<div class="hero-unit" style='color:yellow; background-color:indigo'>
+  <h1>Uncle Sublime !</h1>
+    <p>To Learn what has become of Landau, ,<br/>
+    and to <br/>
+    Meet the GRANDFATHER OF RAP !!! </p>
+              <p class="btn btn-primary btn-large">
+              <a class="hero_sublime" href= <%= gofrap_path%> >
+                CLICK HERE 
+              </a>
+              </p>
+</div>
+
+dont know how to change the text color of class="btn btn-primary btn-large" other than via inline "style="
+want to use that class but establish a including or included class that modifies the text color 
+
+<li><%= link_to "Uncle Sublime, click here to meet the Grandfather of Rap", grandfather_of_rap_path %></li>
+
+<li><%= link_to "Uncle Sublime, click here to meet the Grandfather of Rap", grandfather_of_rap_path, {:class => "sublime_link"} %></li>
+:style => "color:red",
+<li><a class = "sublime_link" href= <%grandfather_of_rap_path %> >Uncle Sublime, click here to meet the Grandfather of Rap</a></li>

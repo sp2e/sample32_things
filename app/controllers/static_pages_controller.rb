@@ -33,5 +33,22 @@ class StaticPagesController < ApplicationController
   def special_links
   end
 
+  def murphy_video
+  end
+
+  def minot
+  end
+
+  def minot_landau
+  end
+
+  def grandfather_of_rap
+  end
   
+  def dad_daughter_sing
+  end
+
+  def nurse_opera_singer
+  end
+    
 end
