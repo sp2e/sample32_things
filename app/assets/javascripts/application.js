@@ -18,3 +18,5 @@
 // I added the following on 4-30-2012
 // Loads all Bootstrap javascripts
 //= require bootstrap
+//= require jquery.ui.draggable
+

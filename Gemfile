@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 #App:   sample32_things
 
 gem 'rails', '3.2.3'
+gem 'jquery-ui-rails'
 
 #gem for active_mailer
 gem 'mail'
