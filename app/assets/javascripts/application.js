@@ -10,13 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+// I added the bootstrap above on 4-30-2012
+// Loads all Bootstrap javascripts
+// note I removed (//)= require_self
 //= require jquery
 //= require jquery_ujs
-//= require_self
 //= require_tree .
-//
-// I added the following on 4-30-2012
-// Loads all Bootstrap javascripts
 //= require bootstrap
 //= require jquery.ui.draggable
-

@@ -1,11 +1,19 @@
 source 'https://rubygems.org'
 #App:   sample32_things
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.11'
 gem 'jquery-ui-rails'
 
 #gem for active_mailer
 gem 'mail'
+gem 'pg'
+gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 2.2.2.0'
+#is execjs needed for production?
+#gem "execjs"
+#my conclusion: execjs not neded, 
+#bootstrap-sass doesnt need it, as sample_app doesnt
+# rubyracer file notes dont indicate a need either
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,17 +21,16 @@ gem 'mail'
 #add twitter-bootstrap-rails
 
 group :development do
-        gem 'pg'
-        gem 'rspec-rails', '2.8.1'
+
+        gem 'rspec-rails', '2.11.0'
 end
 
-#is execjs needed for production?
-gem "execjs"
+
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails', '~> 3.2'
   gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -34,17 +41,16 @@ group :assets do
   #twitter-bootstrap not needed for production
     #shouldnt need followin line for libv8.....
   #gem 'libv8', '3.3.10.4'  
-  gem 'bootstrap-sass'
+
 end
 
-gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
 end
 
 group :production do
-  gem 'pg'
+
 end
 
 

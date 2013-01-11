@@ -1,14 +1,20 @@
 Sample32Things::Application.routes.draw do
   
-  get "experiments/pic_drag"
-
-  get "experiments/help"
-
   resources :users
 
   root to: 'static_pages#home'
+  
+ 
   match '/site_home', to: 'static_pages#home'
   match '/help', to: 'static_pages#help'
+
+  #get "experiments/pic_drag"
+  #get "experiments/help"
+  
+  match '/pic_drag', to: 'experiments#pic_drag'
+  match '/experiments/pic_drag', to: 'experiments#pic_drag'
+  #match '/exp_help', to: 'experiments#help'
+
   match '/text_file_load', to: 'static_pages#load_text_file'
   match '/special_links', to: 'static_pages#special_links'
 
@@ -16,6 +22,7 @@ Sample32Things::Application.routes.draw do
   match '/murphy_video', to: 'static_pages#murphy_video'
   match '/minot', to: 'static_pages#minot'
   match '/unc_sub_home', to: 'unc_sub#unc_sub_home'
+  match '/unc_sub', to: 'unc_sub#unc_sub_home'
   match '/sublime_landau', to: 'static_pages#sublime_landau'
   match '/grandfather_of_rap', to: 'static_pages#grandfather_of_rap'
   match '/dad_daughter_sing', to: 'static_pages#dad_daughter_sing'

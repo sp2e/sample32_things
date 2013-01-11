@@ -10,95 +10,34 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <style>
-    #draggable {"MtSee.jpg"}
+  #olddraggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style> -->
+
+  <style>
+  #draggable { }
   </style>
+
 
   <script>
     $(function() {
         $( "#draggable" ).draggable({ revert: false });
     });
   </script>  
+
+<!-- 
+  <script type="text/javascript">
+        $(".draggable").draggable();
+  </script>
+  -->
+
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">Demo Site for ND</a>
-        <ul class="nav">
-          <li><%= link_to "Demo Home", site_home_path %></li>
-          <li><%= link_to "Special Links", special_links_path %></li>
-          <li><%= link_to "Users", users_path %></li>
-          
-          
-        </ul>
-
-
-        <div class="nav-collapse">
-          <ul class="nav">
-            
-            <li><%= link_to "Test-Load Files", text_file_load_path %></li>
-            <li><%= link_to "Link to Nowhere" %></li>
-            
-          </ul>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-
-	<div class="container-fluid">
-		<div class="row-fluid">
-		    
-			<div class="span3">
-<pre>
-<br/>
-<br/>
-
-
-</pre>
-<%# 
-Text in a pre element>
-
-is displayed in a fixed-width
-font, and it preserves
-both      spaces and
-line breaks 
-%>
-			      <h2>Grand Canyon</h2>
-
-            <%= image_tag "GCriverCrop1.jpg", :id => "gc_slice", :size => "60x540",:alt => "Path to Picture not found !!!!!!!!! "%>
-            <p>
-            <h3 id="demo_intro"> This is only a test site  that I use for my own experiments and education.</h3>
-            </p>
-            <br/>
-<pre>
-<br/>
-<br/>
-Its a Long Ways Down 
-
-        || 
-        ||
-        ||
-       ____ 
-       \  /
-        \/
-</pre>
-			      
-            <p class="clear_text">Here we are: A Long Ways Down !!!</p>        
-			</div>
-      <div class="span9"><%= yield %></div>
-		    
-		</div> 	
-	</div>
+  <%= render 'layouts/menu_bar' %>
+  <%= render 'layouts/bodys' %>
+  
 
 </body>
 </html>

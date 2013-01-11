@@ -1,0 +1,36 @@
+		<div class="span3">
+      <pre>
+        <br/>
+        <br/>
+      </pre>
+        <%# 
+        Text in a pre element
+        is displayed in a fixed-width font, 
+        and it preserves both 
+        spaces and line breaks 
+        %>
+
+			<h2>Grand Canyon</h2>
+
+      <%= image_tag "GCriverCrop1.jpg", :id => "gc_slice", :size => "60x540",:alt => "Path to Picture not found !!!!!!!!! "%>
+      <p>
+        <h3 id="demo_intro"> This is only a test site  that I use for my own experiments and education.</h3>
+      </p>
+      <br/>
+      <pre>
+        <br/>
+        <br/>
+Its a Long Ways Down 
+
+        || 
+        ||
+        ||
+       ____ 
+       \  /
+        \/
+      </pre>
+			      
+      <p class="clear_text">Here we are: A Long Ways Down !!!</p> 
+
+    
+		</div>

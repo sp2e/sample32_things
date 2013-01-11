@@ -1,0 +1,9 @@
+<%#now the bodies below the menu bar is defined"%>
+<div class="container-fluid">
+	<div class="row-fluid">
+    <%= render 'layouts/canyon_sidebar' %>
+		       
+    <%# this yield gets the main body%>   
+    <div class="span9"><%= yield %></div>		    
+	</div> 	
+</div>
