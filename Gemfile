@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 #App:   sample32_things
 
 gem 'rails', '3.2.11'
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '3.0.1'
 
 #gem for active_mailer
-gem 'mail'
+gem 'mail', '2.4.4'
 gem 'pg'
-gem 'jquery-rails'
-gem 'bootstrap-sass', '~> 2.2.2.0'
+gem 'jquery-rails','2.1.4'
+gem 'bootstrap-sass', '2.2.2.0'
 #is execjs needed for production?
 #gem "execjs"
 #my conclusion: execjs not neded, 

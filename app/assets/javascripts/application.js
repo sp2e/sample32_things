@@ -15,6 +15,6 @@
 // note I removed (//)= require_self
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require_tree .
 //= require bootstrap
-//= require jquery.ui.draggable

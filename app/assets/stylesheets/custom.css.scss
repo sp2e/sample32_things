@@ -1,7 +1,11 @@
 
-//$heroUnitLeadColor:purple;	
+//$heroUnitLeadColor:blue;	
+$heroUnitLeadColor:#000044;
+// the above is very dark blue
 //$heroUnitBackground:powderBlue;
+$heroUnitBackground:gray;
 //$heroUnitHeadingColor:#000044;
+$heroUnitHeadingColor:black;
 
 //THESE WERE PLAYFUL COLORS FOR UNC_SUB
 //  defining variables here and then using those variable(s) here wont work !
@@ -88,10 +92,14 @@ clear:both;
 }
 
 //the next 3 lines dont work for the above hero-unit styling
-.hero-unit {
-$heroUnitLeadColor:yellow;	
-$heroUnitBackground:black;
-$heroUnitHeadingColor:red;
+//.hero-unit {
+//$heroUnitLeadColor:yellow;	
+//$heroUnitBackground:black;
+//$heroUnitHeadingColor:red;
+//}
+
+.hero-unit p {
+	color: #000066;
 }
 
 

@@ -4,4 +4,8 @@ class ExperimentsController < ApplicationController
 
   def help
   end
+
+  def pic_gray
+  end
+  
 end

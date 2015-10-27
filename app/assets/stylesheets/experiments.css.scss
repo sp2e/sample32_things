@@ -1,3 +1,28 @@
 // Place all the styles related to the Experiments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$satOrange: #FE9261;
+$head-width: 333px;
+$GrayTextBackground: #7A7A7A;
+$DarkGraySideBackground: #444444;
+
+#Gray_Intro_BMP {
+    //padding-top:10;
+    //height: 35.19%;
+    width: 100%;
+    //width: $head-width; 
+    //min-width:325px;
+    //min-height: 213px;
+    border: 1px solid $GrayTextBackground;
+}
+
+#design_pic {
+    //height: 36%;
+    //height: 373px;
+    //margin-bottom: 1px;  
+    width: 100%;
+    //width: $head-width; 
+    //min-width:325px;
+    //min-height: 310px;
+    //border: 1px solid white;
+}

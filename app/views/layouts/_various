@@ -3,8 +3,8 @@
     Various <b class="caret"></b>
   </a>
   <ul class="dropdown-menu">
-    <li>
-      <%= link_to "Drag Pictures", pic_drag_path %></li>
+    <li><%= link_to "Drag Pictures", pic_drag_path %></li>
     <li><%= link_to "Special Links", special_links_path %></li>  
+    <li><%= link_to "Uncle Sub", unc_sub_path %></li>  
   </ul>
 </li>

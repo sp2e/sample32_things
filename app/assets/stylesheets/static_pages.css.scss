@@ -6,14 +6,47 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//current GIT
+//dl.captioned-image         { position: relative; margin: 1em 0; }
 
+// dl comes with default attributes, including 1em/1em margins, 
+// thus margin: 0 0; is needed in the next line.
+// to keep the top of the image on the same level as the 1st column.
+dl.captioned-image         { position: relative; margin: 0 0; }
 
+//Current GIT
+//dl.captioned-image dt img  { display: block;}
 
-dl.captioned-image         { position: relative; margin: 1em 0; }
-dl.captioned-image dt img  { display: block; }
-dl.captioned-image dd      { position: absolute; left: 30%; top: 0.2em;
-                             font: bold 1.1em/1.25em Helvetica, sans-serif; }
+// width= 100% enables the image to grow beyond certain boundaries,
+// which it needs to do in order to keep the text centered on the image
+dl.captioned-image dt img  { width: 100%; } // for centering text on image
+
+//Current GIT
+//dl.captioned-image dd      { position: absolute; left: 30%; top: 0.2em;
+//                             font: bold 1.1em/1.25em Helvetica, sans-serif; }
+                         
+//dl.captioned-image dd      { position: absolute; top: 0.2em; 
+//                             margin-left: auto;margin-right: auto; 
+//                             text-align: center; display: block; width: 100%;
+//                             font: bold 1.1em/1.25em Helvetica, sans-serif; }
+
+//dl.captioned-image dd      { position: absolute; top: 50%; left: 50%;
+//                           transform: translateX(-50%) translateY(-50%);
+//                            font: bold 1.1em/1.25em Helvetica, sans-serif; }
+
+//  Below for centered text on image
+dl.captioned-image dd      { position: absolute;   left: 50%;
+                           transform: translateX(-50%);
+                            font: bold 1.1em/1.25em Helvetica, sans-serif; }
 
 dl.captioned-image dd span { display: block; float: left; clear: both;
                              
                              padding: 0.25em 0.5em; color: red; }
+
+//display: block; float: left;top: 0.2em;
+
+
+//position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    transform: translateX(-50%) translateY(-50%);

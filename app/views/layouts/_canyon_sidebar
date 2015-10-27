@@ -13,9 +13,9 @@
 			<h2>Grand Canyon</h2>
 
       <%= image_tag "GCriverCrop1.jpg", :id => "gc_slice", :size => "60x540",:alt => "Path to Picture not found !!!!!!!!! "%>
-      <p>
+      <p></p> 
         <h3 id="demo_intro"> This is only a test site  that I use for my own experiments and education.</h3>
-      </p>
+      <p></p> 
       <br/>
       <pre>
         <br/>

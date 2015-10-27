@@ -8,8 +8,8 @@ development:
   encoding: unicode
   database: pg_sample32_development
   pool: 5
-  username: postgres
-  password: bennett
+  username: sp2e
+  password: 
 
 
 # Warning: The database defined as "test" will be erased and
@@ -20,13 +20,13 @@ test:
   encoding: unicode
   database: pg_sample32__test
   pool: 5
-  username: postgres
-  password: bennett
+  username: sp2e
+  password: 
 
 production:
   adapter: postgresql
   encoding: unicode
   database: pg_sample32__production
   pool: 5
-  username: postgres
+  username: sp2e
   password: 

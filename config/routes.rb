@@ -13,6 +13,7 @@ Sample32Things::Application.routes.draw do
   
   match '/pic_drag', to: 'experiments#pic_drag'
   match '/experiments/pic_drag', to: 'experiments#pic_drag'
+  match '/pic_gray', to: 'experiments#pic_gray'
   #match '/exp_help', to: 'experiments#help'
 
   match '/text_file_load', to: 'static_pages#load_text_file'

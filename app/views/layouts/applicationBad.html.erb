@@ -17,25 +17,12 @@
   //width: 300px; height: 250px;
   </style> -->
 
-
   <style>
-  #draggable2 {
+  #draggable {
    width: 300px; height: 250px; padding: 0.5em;  
-    }
-
-
-#resizable {
-   width: 300px; height: 250px; padding: 0.5em;  
-    }
-
-#noresize {
-   width: 300px; height: 250px; padding: 0.5em;  
-    }
-
-#resize2 { 
-  width: 300px; height: 250px; padding: 0.5em;
     }
   </style>
+
   <script type="text/javascript">
  $.noConflict();
 
@@ -50,20 +37,9 @@
  });
 
 
- $(function() {
-   $( "#resizable" ).resizable();
+  $(function() {
+    $( "#draggable" ).resizable();
   });
-
-$(function() {
-   $( "#picid" ).resizable();
-
-  });
-
-   $(function() {
-    $( "#resize2" ).resizable();
-
-  });
-
 
 
 //jQuery(document).ready(function($) {
